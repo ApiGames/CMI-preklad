@@ -1,7 +1,7 @@
 # Plná podpora barev a některých variací
-# Keep in mind that variables wont work for some lines, when it will for anothers :)
-# Just keep them where there are now and everything will be ok :)
-# Some lines can have global variables set. For player who will be effected. In example /heal Zrips then Zrips data will be used
+# Mějte na paměti, že variace nemusí občas fungovat, jen poznámka pro ostatní :)
+# Držte tam ty věci kde jsou teď a všechno bude ok :)
+# Některé řádky mohou mít nastaveny globální variční sety. Pro hráře, který na to má efekt. Například /heal Zrips pak Zrips data budou využita
 # [serverName] ukáže jméno serveru
 # [playerName] ukáže hráčovo jméno
 # [playerDisplayName] ukáže jméno hráče na obrazovce
@@ -13,11 +13,11 @@
 # [gameMode] ukáže jaký má hráč režim
 # [prefix] to show target player prefix if posible
 # [suffix] to show target player suffix if posible
-# Sender is console or player who performs command. In example Zrips performs /heal Zhax then Zrips data will be used
+# Sender is console or player who performs command. Například Zrips provede /heal Zhax pak Zrips data budou zapsána
 # [senderName] ukáže jméno hráče, který to poslal
 # [senderDisplayName] ukáže hráče, který to poslal na obrazovce
-# [senderLvl] to show Sender player level
-# [senderExp] to show Sender player total exp
+# [senderLvl] ukáže odesílatele zprávy jaký má level
+# [senderExp] ukáže odesílatele zprávy kolik má dohromady expů
 # [senderHp] ukáže odesílatele zprávy jaký má hlad
 # [senderMaxHp] ukáže odesílatele zprávy jaký má maximum života
 # [senderHunger] ukáže odesílatele zprávy jaký má hlad
