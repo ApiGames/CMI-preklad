@@ -1,40 +1,40 @@
-# Full color code support and some variables
+# Plná podpora barev a některých variací
 # Keep in mind that variables wont work for some lines, when it will for anothers :)
 # Just keep them where there are now and everything will be ok :)
 # Some lines can have global variables set. For player who will be effected. In example /heal Zrips then Zrips data will be used
-# [serverName] to show server name
-# [playerName] to show target player name
-# [playerDisplayName] to show target player display name
-# [lvl] to show target player level
-# [exp] to show target player total exp
-# [hp] to show target player health
-# [maxHp] to show target player max health
-# [hunger] to show target player hunger level
-# [gameMode] to show target player gamemode
+# [serverName] ukáže jméno serveru
+# [playerName] ukáže hráčovo jméno
+# [playerDisplayName] ukáže jméno hráče na obrazovce
+# [lvl] ukáže kolik má hráč level
+# [exp] ukáže kolik má hráč expů
+# [hp] ukáže kolik má hráč života
+# [maxHp] ukáže jaký má hráč maximum života
+# [hunger] ukáže jaký má hráč hlad
+# [gameMode] ukáže jaký má hráč režim
 # [prefix] to show target player prefix if posible
 # [suffix] to show target player suffix if posible
 # Sender is console or player who performs command. In example Zrips performs /heal Zhax then Zrips data will be used
-# [senderName] to show Sender player name
-# [senderDisplayName] to show Sender player display name
+# [senderName] ukáže jméno hráče, který to poslal
+# [senderDisplayName] ukáže hráče, který to poslal na obrazovce
 # [senderLvl] to show Sender player level
 # [senderExp] to show Sender player total exp
-# [senderHp] to show Sender player health
-# [senderMaxHp] to show Sender player max health
-# [senderHunger] to show Sender player hunger level
-# [senderGameMode] to show Sender player gamemode
-# [senderPrefix] to show Sender player prefix if posible
-# [senderSuffix] to show Sender player suffix if posible
+# [senderHp] ukáže odesílatele zprávy jaký má hlad
+# [senderMaxHp] ukáže odesílatele zprávy jaký má maximum života
+# [senderHunger] ukáže odesílatele zprávy jaký má hlad
+# [senderGameMode] ukáže odesílatele zprávy jaký má režim
+# [senderPrefix] ukáže odesílatele zprávy jaký má prefix pokud je to možné
+# [senderSuffix] ukáže odesílatele zprávy jaký má suffix pokud je to možné
 # Source is player which is being used for extra info. In example Zrips performs /tp Zhax Zrips then Zhax data will be used as its location is being taken for new player location
-# [sourceName] to show source player name
-# [sourceDisplayName] to show source player display name
-# [sourceLvl] to show source player level
-# [sourceExp] to show source player total exp
-# [sourceHp] to show source player health
-# [sourceMaxHp] to show source player max health
-# [sourceHunger] to show source player hunger level
-# [sourceGameMode] to show source player gamemode
-# [sourcePrefix] to show source player prefix if posible
-# [sourceSuffix] to show source player suffix if posible
+# [sourceName] ukáže zdroj jmenovky hráče
+# [sourceDisplayName] ukáže zdroj jmenovky hráče na displeji
+# [sourceLvl] ukáže zdroj hráče jeho levelu
+# [sourceExp] ukáže zdroj hráče jeho maximux xp
+# [sourceHp] ukáže zdroj hráče jeho života
+# [sourceMaxHp] ukáže zdroj hráče maximalního života
+# [sourceHunger] ukáže zdroj hráče jeho hladu
+# [sourceGameMode] ukáže zdroj hráče jeho modu
+# [sourcePrefix] ukáže zdroj hráče jeho prefixu pokud je to možné
+# [sourceSuffix] ukáže zdroj hráče jeho suffix pokud je to možné
 # ***********************************************
 # Some lines supports option to send them to custom places, like action bar, title, sub title or even create JSON/clickable messages
 # If line starts with !toast! then player will get toast message (advancement popup, only 1.12 and up). Some extra variables can be used to define type and icon. example: !toast! -t:goal -icon:paper Hello world!
