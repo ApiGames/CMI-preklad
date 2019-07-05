@@ -8,10 +8,10 @@ Příklad: ApiGames (55-249)  - Čísla označují řadky
 Překládání:
 -
 
-ApiGames (806-????)
+ApiGames (838-????)
 maiden107 (1-37)
 
 -
 Hotový překlad:  
 -
-ApiGames (55-805)
+ApiGames (55-837)
