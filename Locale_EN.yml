@@ -837,161 +837,154 @@ command:
       info: '&ePřipne příkaz k itemu'
       args: '[command/-clear]'
       explanation:
-      - Separate commands with ;;
-      - You can define to run command on left or right mouse click separately with
-      - '!left! to perform command on left mouse click'
-      - '!right! to perform command on right click'
-      - '!limiteduse:[amount]! defines how many times you can use this item'
-      - '!cc! performs command from console, requires cmi.command.attachcommand.cc
-        permission'
-      - '!cooldownn:[amount]! adds cooldown on item usage.'
-      - '[interactedPlayer] inserts name of player you interacted while holding item'
-      - Global variables working in addition with [itemUses]
+      - Příkazy odděluji pomocí ;;
+      - Můžeš definovat jaký příkaz bude aktivován po levém/pravém kliknutím
+      - '!left! vyvolá příkaz po levém kliknutí'
+      - '!right! vyvolá příkaz po pravém kliknutí'
+      - '!limiteduse:[amount]! definuje kolikrát může být item použit'
+      - '!cc! vyvolá příkaz z konzole, nutné oprávnění cmi.command.attachcommand.cc'
+      - '!cooldownn:[amount]! přidá delay na použití itemu.'
+      - '[interactedPlayer] vloží jméno hráče, který použil item'
+      - Globální proměnné fungují s [itemUses]
     info:
       list: ' &e[id]. &6[cmd]'
-      noCmds: ' &eThere is no comamnds attached to this item'
-      uses: '&eItem usages: &6[amount]'
-      usesLeft: '!actionbar!&eItem uses left: &6[itemUses]'
-      cooldown: '&7Item is on cooldown. Wait [time]'
+      noCmds: ' &eK tomuto itemu nejsou připojeny žádné příkazy.'
+      uses: '&ePočet použití: &6[amount]'
+      usesLeft: '!actionbar!&eZbývá použití: &6[itemUses]'
+      cooldown: '&7Před dalším použitím musíš počkat [time]'
   back:
     help:
-      info: '&eTeleports back to last saved location'
+      info: '&eTeleportuje zpět do naposledy uložené lokace.'
       args: (playerName) (-s)
     info:
-      noinfo: '&4There is no saved location to return to!'
-      feedback: '&eReturned to last saved location (&6[worldName]&e,&6[x]&e,&6[y]&e,&6[z]&e)!'
+      noinfo: '&4Není zde žádná lokace, do které by ses mohl vrátit!'
+      feedback: '&eTeleportován zpět (&6[worldName]&e,&6[x]&e,&6[y]&e,&6[z]&e)!'
   balance:
     help:
-      info: '&eCheck money balance'
+      info: '&eZjistí zůstatek peněz'
       args: (playerName)
     info:
-      balance: '&eBalance: &6[money]'
-      balanceOther: '&6[playerDisplayName] &ebalance: &6[money]'
+      balance: '&ePeníze: &6[money]'
+      balanceOther: '&ePeníze hráče &6[playerDisplayName]: &6[money]'
   baltop:
     help:
-      info: '&eCheck top money list'
+      info: '&eZobrazí seznam nejbohatších hráčů'
       args: (playerName)
     info:
-      topLine: '&e&m-----&6 Balancetop &e&m-----'
-      topLineHover: '&6Server Total: &c[total]'
+      topLine: '&e&m-----&6 Nejbohatší hráči &e&m-----'
+      topLineHover: '&6Celkem: &c[total]'
       list: '&e[place]. &6[playerDisplayName]: &e[balance]'
       ownLine: '&2[place]. &2[playerDisplayName]: &2[balance]'
-      recalculating: '&2Baltop is being recalculated, please wait couple seconds and
-        try again'
+      recalculating: '&2Seznam je právě přepočítáván, prosím počkej pár sekund a zkus to znovu.'
   ban:
     help:
-      info: '&eBan player'
+      info: '&eZabanuje hráče'
       args: '[playerName] (reason) (-s)'
       explanation:
-      - cmi.command.ban.bypass - to bypass ban
+      - cmi.command.ban.bypass - ban nebude působit
     info:
-      message: '&cYou are banned from this server!'
-      reason: '&6Reason: &e[reason]'
-      defaultReason: '&eViolated server rules'
-      messageToAll: '&6[playerDisplayName] &egot banned by &6[senderDisplayName] &efor:
+      message: '&cJsi zabanovaný z tohoto serveru!'
+      reason: '&6Důvod: &e[reason]'
+      defaultReason: '&ePorušení pravidel serveru'
+      messageToAll: '&6[playerDisplayName] &ebyl zabanován adminem &6[senderDisplayName] &eza:
         &6[reason]'
-      banedSilent: '&7[&8Silent&7]&6[playerDisplayName] &egot banned by &6[senderDisplayName]
-        &efor: &6[reason]'
-      noSelfBan: '&cYou can''t ban yourself'
-      cantBan: '&cYou can''t ban this player'
+      banedSilent: '&7[&8Skrytý&7]&6[playerDisplayName] &ebyl zabanován adminem &6[senderDisplayName]
+        &eza: &6[reason]'
+      noSelfBan: '&cNemůžeš zabanovat sám sebe'
+      cantBan: '&cTohoto hráče nejde zabanovat'
   blockcycling:
     help:
-      info: '&eCycle block states'
+      info: '&eStatus hodin (bloku)'
       args: ''
   blockinfo:
     help:
-      info: '&eCheck block information'
+      info: '&eZobrazí informace o bloku'
       args: ''
     info:
       Info: ' &eId: &6[id][data] &eMaterial: &6[name][ndata]'
-      RealName: ' &eReal name: &6[name]'
-      TempLight: ' &eTemperature: &6[temp]&e, Light - block: &6[blevel]&e, sky: &6[slevel]&e,
-        overral: &6[level]'
-      Resistance: ' &eResistance - Mining: &6[mining]&e, Explosion: &6[explosion]'
-      noteBlock: ' &eTone: &6[tone] &eOctave: &6[octave] &6Instrument: &e[instrument]
-        &6Pitch: &7[pitch]'
+      RealName: ' &eNázev: &6[name]'
+      TempLight: ' &eSvětlo: &6[temp]&e, Světlo - blok: &6[blevel]&e, nebe: &6[slevel]&e,
+        celkově: &6[level]'
+      Resistance: ' &eOdpor - Těžení: &6[mining]&e, Exploze: &6[explosion]'
+      noteBlock: ' &eTón: &6[tone] &eOktáva: &6[octave] &6Nástroj: &e[instrument]
+        &6Hlasitost: &7[pitch]'
       BlockState: ' &7[state]: &f[value]'
   blocknbt:
     help:
-      info: '&eShow block NBT information'
+      info: '&eZobrazí NBT data itemu'
       args: ''
     info:
-      noNbt: '&eBlock does not contain any NBT data'
+      noNbt: '&eBlok neobsahuje žádná data NBT'
   book:
     help:
-      info: '&eBook editing'
+      info: '&eUpravení knihy'
       args: '[Author/Title/Unlock] [value]'
     info:
-      noitem: '&cNot holding any item in hand.'
-      notBook: '&cItem is not written book.'
-      wrongValue: '&cItem is not closed written book.'
+      noitem: '&cNedržíš v ruce žádný item.'
+      notBook: '&cItem v ruce není rozepsaná kniha.'
+      wrongValue: '&cItem v ruce není rozepsaná kniha.'
       inccorectAction: '&eIncorrect action name.'
-      authorChanged: '&eAuthor changed to: [author]'
-      titleChanged: '&eTitle changed to: [title]'
-      unlocked: '&eBook was unlocked'
+      authorChanged: '&eAutor změněn na: [author]'
+      titleChanged: '&eNadpis změněn na: [title]'
+      unlocked: '&eKniha byla odemčena'
   bossbarmsg:
     help:
-      info: '&eSends boss bar message to player'
-      args: '[playerName/all] (-sec:[seconds])(-t:[timeToKeepFor]) (-n:nameOfBar)
+      info: '&ePošle hráči zprávu v boss baru'
+      args: '[hráč/all] (-sec:[seconds])(-t:[timeToKeepFor]) (-n:nameOfBar)
         (-p:[maxValue/current]) (-c:[color]) (-s:[1,6,10,12,20]) (-cmd:"command;;command2")
         (-a:[ticks]) [message]'
       explanation:
-      - PlaceHolderAPI is supported for progression and text it self
-      - Time is defined in regular way, like 1s is one second and 1m is one minute.
-        This will determine for how long to keep bar shown for player before automatically
-        hiding
-      - nameOfBar is option and when defining same one, then current bar will update
-        with new information
-      - 'colors can be: red, green, pink, purple, white, yellow'
-      - max and current values determines bar fillup, PlaceHolderAPI variables can
-        be used for dynamic updates
-      - 'Examples:'
+      - PlaceHolderAPI je podporované
+      - Čas zapisuj normálně 1s = 1 sekunda, 1m = 1 minuta, určuje to čas, než boss bar automaticky zmizí
+      - nameOfBar když nastavíš stejné jméno, současný bar se aktualizuje s novými informacemi
+      - 'Dostupné barvy: red, green, pink, purple, white, yellow'
+      - maximální a současné hodnoty záleží na úplnosti baru
+      - 'Příklady:'
       - /cmi bossbar Zrips BossBarTitle
       - /cmi bossbarmsg all -t:1s -p:%server_max_players%/%server_online% -n:testbar
         -c:red &2Title of bar %server_online%/%server_max_players% &e%cmi_user_name%
-      - /cmi bossbarmsg all -p:+1 -n:testbar - will add one percent towards current
+      - /cmi bossbarmsg all -p:+1 -n:testbar - přidá k současnému 1%
         progresion bar by name
-      - /cmi bossbarmsg all -p:-1 -n:testbar - will take out one percent from current
+      - /cmi bossbarmsg all -p:-1 -n:testbar - sebere 1% ze současného
         progresion bar by name
-      - /cmi bossbarmsg all -s:10 -n:testbar - will set bossbar style to 10 segments
-        by bar name
-      - /cmi bossbarmsg all -sec:5 - will count for 5 seconds from 0 to 5
-      - /cmi bossbarmsg all -sec:-5 - will count for 5 seconds from 5 to 0
+      - /cmi bossbarmsg all -s:10 -n:testbar - nastaví bossbar na 10 kousků
+      - /cmi bossbarmsg all -sec:5 - bude počítat po dobu 5 sekund z 0 do 5
+      - /cmi bossbarmsg all -sec:-5 - bude odpočítávat po dobu 5 sekund od 5 do 0
       - http://www.zrips.net/cmi/commands/bossbarmsg-handling/
   broadcast:
     help:
-      info: '&eSends special message to all players'
+      info: '&ePošle speciální zprávu všem hráčům'
       args: (!) [message] (-w:[worldName,worldName])
       explanation:
-      - If message starts with ! then clean message will be shown
-      - Worlds can be defined to broadcast messages only in those worlds
+      - Pokud zpráva začíáná s ! bude zobrazena čistá zpráva bez prefixu
+      - Můžou být uvedeny světy, ve kterých se zpráva zobrazí
     info:
-      format: '&e[&4Broadcast&e] &2[message]'
+      format: '&e&lOZNÁMENÍ > &7[message]'
   burn:
     help:
-      info: '&eBurn a player'
+      info: '&eZapálí hráče'
       args: (playerName) (time) (-s)
     info:
-      feedback: '&eYou have put on fire &3[playerDisplayName]&e for &6[time] &e(&3[offon]&e).'
-      targetfeedback: '&eYou have been put on fire by &3[senderDisplayName]&e for
+      feedback: '&eZapálil jsi hráče &3[playerDisplayName]&e na &6[time] &e(&3[offon]&e).'
+      targetfeedback: '&eByl jsi zapálen hráčem &3[senderDisplayName]&e na
         &6[time]&e.'
   charges:
     help:
-      info: '&eShows left spawner charges'
+      info: '&eZobrazí zbývajicí náboj'
       args: '[playerName] [add/set/take/clear/reset] (-f)'
     info:
-      charges: '&e* Charges: &6[current]&e/&6[max] [bypass]'
-      cd: '&e* CD: &6[cdtime] &eNext in: &6[time]'
+      charges: '&e* Energie: &6[current]&e/&6[max] [bypass]'
+      cd: '&e* CD: &6[cdtime] &eDalší za: &6[time]'
       bypass: '&6(Bypass)'
-      allUsed: '&eAll charges used! Next in [time]'
-      noGroup: '&eDon''t have assigned charge group'
-      cantBreak: '&eYou can''t break until you will have assigned charge group'
-      minusCd: '&e Minus &6[sec]&esec on spawner charge cooldown'
-      add: '&eAdded &6[amount] &espawner charges for &6[playerDisplayName]'
-      set: '&eSet &6[amount] &espawner charges for &6[playerDisplayName]'
-      clear: '&eCleared all spawner charges for &6[playerDisplayName]'
-      reset: '&eReset spawner charge group for &6[playerDisplayName]'
-      take: '&eTook &6[amount] &espawner charges from &6[playerDisplayName]'
+      allUsed: '&eVšechna energie využita! Další bude za [time]'
+      noGroup: '&eNení přidělena charge group.'
+      cantBreak: '&eNemůžeš zničit dokud nemáš přidělenou charge group!'
+      minusCd: '&e Minus &6[sec]&e sekund do dobytí energie'
+      add: '&ePřidáno &6[amount] &eenergie pro hráče &6[playerDisplayName]'
+      set: '&eEnerigie nastavena na &6[amount] &epro hráče &6[playerDisplayName]'
+      clear: '&eSmazána všechna energie hráče &6[playerDisplayName]'
+      reset: '&eResetována všechna energie hráče &6[playerDisplayName]'
+      take: '&eOdebráno &6[amount] &eenergie hráči &6[playerDisplayName]'
   chat:
     help:
       info: '&eChat s označením hráčem přes veřejný chat.'
