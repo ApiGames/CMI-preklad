@@ -994,41 +994,41 @@ command:
       take: '&eTook &6[amount] &espawner charges from &6[playerDisplayName]'
   chat:
     help:
-      info: '&eChat with target player through public messages'
+      info: '&eChat s označením hráčem přes veřejný chat.'
       args: '[playerName/off]'
     info:
-      toggledOn: '&ePersistent chat have been started with &6[playerDisplayName]&e.
-        You can now write messages in public chat.'
-      toggledOff: '&eToggled of Persistent chat'
-      toggle: '&6[playerDisplayName] &ewants to enable persistent chat with you'
+      toggledOn: '&eByl zahájen trvalý chat &6[playerDisplayName]&e.
+        Můžete teď psát do veřejného chatu.'
+      toggledOff: '&ePřepnutí do trvalého chatu'
+      toggle: '&6[playerDisplayName] &eNěkdo chce s vámi povolit trvalý chat'
   checkaccount:
     help:
-      info: '&eSearch for a players other accounts'
+      info: '&eVyhledat ostatní účty hráče'
       args: (playerName/ip)
       explanation:
-      - 'Extra permission: cmi.command.checkaccount.showip'
+      - 'Extra permice: cmi.command.checkaccount.showip'
     info:
       place: '&e[place]. &6'
       ip: '&6[ip]&e: '
       name: '&6[name]&e(&6[times]&e)'
-      nonIpList: '&eAccounts: &6'
+      nonIpList: '&eÚčet: &6'
       nonIpName: '&6[name]'
-      click: '&eClick to check &6[name] &eaccount'
-      noData: '&cThere is no records for this user'
+      click: '&eZmáčkni na kontrolu &6[name] &eúčtu'
+      noData: '&cTento uživatel nemá evidence pro tohoto uživatele'
   checkban:
     help:
-      info: '&eCheck players ban status'
+      info: '&eZkontrolovat hráčuv status s banem'
       args: (playerName)
     info:
       list: '&6[place]&e. &e[playerDisplayName] &6[time]'
-      permanent: '&3Permanent'
-      bannedUntil: '&eBanned for: &6[time]'
-      reason: '&eReason: &6[reason]'
-      bannedBy: '&eBanned by: &6[sourceDisplayName]'
-      bannedWhen: '&eBanned at: &6[date]'
+      permanent: '&3Permanentí'
+      bannedUntil: '&eZabanován do: &6[time]'
+      reason: '&eKvůli: &6[reason]'
+      bannedBy: '&eByl jste zabavován od: &6[sourceDisplayName]'
+      bannedWhen: '&eByl jste zabavován v: &6[date]'
   checkcommand:
     help:
-      info: '&eSearch for possible commands by keyword'
+      info: '&eVyhledat příkazy podle klíčového slova'
       args: (key word)
     info:
       list: '&e[place]. &f[command] &7[args]'
@@ -1036,14 +1036,14 @@ command:
       variableColor: '&f'
   checkexp:
     help:
-      info: '&eCheck players exp'
+      info: '&eZkontrolovat hráčova expéčka'
       args: (playerName)
     info:
-      current: '&eLevel: &6[currentLevel] &eExp: &6[levelExp] &eTotal exp: &6[exp]'
-      need: '&eNeed exp until next level: &6[missingExp]'
+      current: '&eLevel: &6[currentLevel] &eExp: &6[levelExp] &eDohromady expů: &6[exp]'
+      need: '&eChybí vám expy na další level: &6[missingExp]'
   checkperm:
     help:
-      info: '&eCheck possible permission nodes'
+      info: '&eZkontrolova možné permise'
       args: (key word)
     info:
       list: '&e[place]. [permission]'
@@ -1051,53 +1051,53 @@ command:
       permissionColor: '&6'
       cmdPermissionColor: '&2'
       variableColor: '&f'
-      noPermissionFound: '&7No permissions found by this keyword'
+      noPermissionFound: '&7Tato permice se nenašla'
   cheque:
     help:
-      info: '&eConvert money into check'
+      info: '&eKonvertovat peníze na kontrolu'
       args: (playerName) [amount]
     info:
-      transfered: '&eTransfered &6[amount] &eto your account. New balance: &6[balance]'
-      chequeName: '&eCheque for &6[amount]'
+      transfered: '&ePřevedeno &6[amount] &e na váš účet. Nová balance: &6[balance]'
+      chequeName: '&eKontrola pro &6[amount]'
       chequeLore:
       - '&r&fIssued by &7[senderDisplayName]'
-      - '&r&fRight click to deposit'
-      holdPaper: '&eHold paper in your hand'
-      cantUse: '&eCan''t use this piece of paper. It is a cheque already!'
+      - '&r&fZmáčkněte pravé tláčítko na vklad'
+      holdPaper: '&ePodržte papír ve své ruce'
+      cantUse: '&eNelze použít tento kus papíru. Je to teď kontrola!'
   clear:
     help:
-      info: '&eClear players inventory'
+      info: '&eVymazat hráčův inventář'
       args: (playerName) (item(-amount)) (-s)
     info:
-      feedback: '&eYou have cleared &3[playerDisplayName]&e inventory (&3[offon]&e).'
-      targetfeedback: '&eYour inventory was cleared by &3[senderDisplayName]&e.'
-      confirm: '&7Click to confirm inventory clear up. &cAll items will be removed!'
+      feedback: '&eTy jsi vymazal &3[playerDisplayName]&e inventář (&3[offon]&e).'
+      targetfeedback: '&eVáš inventář byl vymazán od &3[senderDisplayName]&e.'
+      confirm: '&7Klikněte na potvrzení vymazání inventáře. &cVšechny věci budou smazány!'
   clearchat:
     help:
-      info: '&eClears chat'
+      info: '&eVyčistit chaty'
       args: (self)
       explanation:
-      - 'Permission:'
+      - 'Permise:'
       - ' &6cmi.command.clearchat.bypass &e- to ignore chat cleaning'
     info:
-      information: '&eChat was cleared by &6[senderDisplayName]'
+      information: '&eChat byl vymazán od &6[senderDisplayName]'
   clearender:
     help:
-      info: '&eClear players ender chest'
+      info: '&eVyčistit hráčovu ender chestu'
       args: '[playerName] (-s)'
     info:
-      feedback: '&eYou have cleared &3[playerDisplayName]&e ender chest (&3[offon]&e).'
-      targetfeedback: '&eYour ender chest was cleared by &3[senderDisplayName]&e.'
+      feedback: '&eVymazal jste &3[playerDisplayName]&e ender chestku (&3[offon]&e).'
+      targetfeedback: '&eVaše ender chestka byla vymazána od &3[senderDisplayName]&e.'
   colorlimits:
     help:
-      info: '&eShows all posible colors'
+      info: '&eZob'
       args: (playerName)
     info:
-      publicmessage: ' &ePublic: '
-      privatemessage: ' &ePrivate: '
+      publicmessage: ' &eVeřejný: '
+      privatemessage: ' &eSoukromý: '
       nickname: ' &eNickName: '
-      signs: ' &eSigns: '
-      books: ' &eBooks: '
+      signs: ' &ePřihlášení: '
+      books: ' &eKnihy: '
       me: ' &eMe: '
       None: '&e-'
   colors:
