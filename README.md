@@ -9,10 +9,10 @@ Překládání:
 -
 
 ApiGames (838-????)
-maiden107 (1000-1100)
+maiden107 (1100-????)
 
 -
 Hotový překlad:  
 -
 ApiGames (55-837)
-maiden107 (1-37)
+maiden107 (1-37) (997-1100)
