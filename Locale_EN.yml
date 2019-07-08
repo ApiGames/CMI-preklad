@@ -1067,11 +1067,11 @@ command:
       confirm: '&7Klikněte na potvrzení vymazání inventáře. &cVšechny věci budou smazány!'
   clearchat:
     help:
-      info: '&eVyčistit chaty'
+      info: '&eVyčistit chat'
       args: (self)
       explanation:
       - 'Permise:'
-      - ' &6cmi.command.clearchat.bypass &e- to ignore chat cleaning'
+      - ' &6cmi.command.clearchat.bypass &e- pro ignorování vymazání chatu'
     info:
       information: '&eChat byl vymazán od &6[senderDisplayName]'
   clearender:
@@ -1095,7 +1095,7 @@ command:
       None: '&e-'
   colors:
     help:
-      info: '&eShows all posible colors'
+      info: '&eZobrazit všechny možné barvy'
       args: (playerName)
     info:
       List:
